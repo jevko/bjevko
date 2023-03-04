@@ -130,9 +130,9 @@ the following python function serializes a collection of nodes/edges (`nedges`),
 def bjevko_serialize(nedges):
   bs = bytearray()
   for (b, data) in nedges:
-    ret.append(b)
-    ret.extend(len(data).to_bytes(4, 'little'))
-    ret.extend(data)
+    bs.append(b)
+    bs.extend(len(data).to_bytes(4, 'little'))
+    bs.extend(data)
   return bytes(bs)
 ```
 
