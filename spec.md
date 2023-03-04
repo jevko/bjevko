@@ -253,8 +253,8 @@ the above compact untyped variant of bjevko can be extended to support basic dat
 000 llll -- long binary string (0 or 17+ bytes) -- llll = lenlen
 001 llll -- long utf-8 string (0 or 17+ bytes) -- llll = lenlen
 
-010 llll -- short binary string (1..16 bytes) -- llll = lenlen
-011 llll -- short utf-8 string (1..16 bytes) -- llll = lenlen
+010 llll -- short binary string (1..16 bytes) -- llll = length
+011 llll -- short utf-8 string (1..16 bytes) -- llll = length
 
 100 xxxx -- unsigned tiny int (4 bits) -- xxxx = data
 101 xxxx -- signed tiny int (4 bits) -- xxxx = data
