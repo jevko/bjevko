@@ -26,7 +26,8 @@ name | bracket | length  |      data      |
 the grammar of bjevko is as follows (in extended ABNF):
 
 ```
-bjevko = *sub [suffix]
+top = *sub [suffix]
+bjevko = *sub suffix
 sub = prefix bjevko
 suffix = %xff affix
 prefix = %x01 affix
