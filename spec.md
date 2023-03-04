@@ -224,7 +224,7 @@ one sensible way of doing that is the following:
 |                      |
 |        1 byte        |
 |______________________|
-|  1 bit  |11x| 4 bits |
+|  1 bit  |10x| 4 bits |
 | bracket |   |  data  |
 |_________|___|________|
 ```
@@ -236,7 +236,7 @@ one sensible way of doing that is the following:
 |                      |          |
 |      1 byte          | <custom> |
 |______________________|  bytes   |
-|  1 bit  |10x| 4 bits |          |
+|  1 bit  |11x| 4 bits |          |
 | bracket |   | custom |  data?   |
 |_________|___|________|__________|
 ```
